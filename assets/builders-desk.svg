@@ -1,0 +1,209 @@
+<svg width="1200" height="330" viewBox="0 0 1200 330" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <clipPath id="screen">
+      <rect x="397" y="61" width="406" height="174" rx="8"/>
+    </clipPath>
+    <filter id="hardShadow" x="-20%" y="-20%" width="150%" height="160%">
+      <feDropShadow dx="6" dy="7" stdDeviation="0" flood-color="#111111"/>
+    </filter>
+    <style>
+      .steam-a { animation: steamA 3.4s ease-in-out infinite; }
+      .steam-b { animation: steamB 3.4s ease-in-out -1.2s infinite; }
+      .steam-c { animation: steamC 3.4s ease-in-out -2.2s infinite; }
+      .cursor { animation: blink 1s steps(2, start) infinite; }
+      .code-scroll { animation: scrollCode 7s ease-in-out infinite; }
+      .gear { animation: spin 7s linear infinite; transform-box: fill-box; transform-origin: center; }
+      .note-one { animation: noteOne 4.8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .note-two { animation: noteTwo 5.4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .robot { animation: robotWalk 7s ease-in-out infinite; }
+      .robot-body { animation: robotBob .55s ease-in-out infinite alternate; transform-box: fill-box; transform-origin: center; }
+      .robot-eye { animation: eyeBlink 4s steps(1, end) infinite; }
+      .commit { animation: pushBlock 7s ease-in-out infinite; }
+      .wheel { animation: wheelSpin .9s linear infinite; transform-box: fill-box; transform-origin: center; }
+      .desk-light { animation: lightPulse 3.5s ease-in-out infinite; }
+      .scribble { stroke-dasharray: 180; animation: scribble 5s ease-in-out infinite; }
+
+      @keyframes steamA {
+        0% { transform: translateY(13px); opacity: 0; }
+        30% { opacity: .75; }
+        100% { transform: translateY(-25px) translateX(8px); opacity: 0; }
+      }
+      @keyframes steamB {
+        0% { transform: translateY(12px); opacity: 0; }
+        30% { opacity: .6; }
+        100% { transform: translateY(-28px) translateX(-6px); opacity: 0; }
+      }
+      @keyframes steamC {
+        0% { transform: translateY(12px); opacity: 0; }
+        30% { opacity: .55; }
+        100% { transform: translateY(-22px) translateX(4px); opacity: 0; }
+      }
+      @keyframes blink {
+        0%, 46% { opacity: 1; }
+        47%, 100% { opacity: 0; }
+      }
+      @keyframes scrollCode {
+        0%, 12% { transform: translateY(0); }
+        45%, 57% { transform: translateY(-48px); }
+        88%, 100% { transform: translateY(0); }
+      }
+      @keyframes spin { to { transform: rotate(360deg); } }
+      @keyframes noteOne {
+        0%, 100% { transform: rotate(-3deg) translateY(0); }
+        50% { transform: rotate(1deg) translateY(-5px); }
+      }
+      @keyframes noteTwo {
+        0%, 100% { transform: rotate(4deg) translateY(0); }
+        50% { transform: rotate(0deg) translateY(5px); }
+      }
+      @keyframes robotWalk {
+        0%, 8% { transform: translateX(0); }
+        70%, 100% { transform: translateX(142px); }
+      }
+      @keyframes pushBlock {
+        0%, 8% { transform: translateX(0); }
+        70%, 100% { transform: translateX(142px); }
+      }
+      @keyframes robotBob {
+        from { transform: translateY(0) rotate(-1deg); }
+        to { transform: translateY(-3px) rotate(1deg); }
+      }
+      @keyframes eyeBlink {
+        0%, 44%, 49%, 100% { transform: scaleY(1); }
+        45%, 48% { transform: scaleY(.15); }
+      }
+      @keyframes wheelSpin { to { transform: rotate(360deg); } }
+      @keyframes lightPulse {
+        0%, 100% { fill: #B9FBC0; }
+        50% { fill: #F9E900; }
+      }
+      @keyframes scribble {
+        0% { stroke-dashoffset: 180; opacity: 0; }
+        25%, 75% { stroke-dashoffset: 0; opacity: 1; }
+        100% { stroke-dashoffset: -180; opacity: 0; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * { animation: none !important; }
+      }
+    </style>
+  </defs>
+
+  <!-- paper backdrop -->
+  <rect width="1200" height="330" rx="24" fill="#FFF8E7"/>
+  <path d="M0 24C142 48 204 4 338 25C503 51 630 5 784 28C953 53 1072 8 1200 30" stroke="#111111" stroke-opacity=".08" stroke-width="2"/>
+  <circle cx="31" cy="31" r="4" fill="#FF4D00"/>
+  <circle cx="49" cy="31" r="4" fill="#146EF5"/>
+  <circle cx="67" cy="31" r="4" fill="#F9E900" stroke="#111111" stroke-width="1"/>
+
+  <!-- wall scribble -->
+  <path class="scribble" d="M85 78C116 55 149 91 181 66C202 50 226 61 239 78" stroke="#FF4D00" stroke-width="5" stroke-linecap="round"/>
+  <text x="82" y="108" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="900" letter-spacing="1.4" fill="#111111">MAKE / BREAK / LEARN</text>
+
+  <!-- sticky notes -->
+  <g class="note-one" filter="url(#hardShadow)">
+    <rect x="259" y="48" width="108" height="92" rx="2" fill="#F9E900" stroke="#111111" stroke-width="3"/>
+    <path d="M281 76H345M281 92H333M281 108H348" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+    <text x="313" y="129" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="900" fill="#FF4D00">SHIP IT</text>
+  </g>
+  <g class="note-two" filter="url(#hardShadow)">
+    <rect x="838" y="52" width="116" height="92" rx="2" fill="#A0C4FF" stroke="#111111" stroke-width="3"/>
+    <text x="896" y="83" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="900" fill="#111111">TODAY:</text>
+    <text x="896" y="104" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="900" fill="#111111">BUILD THE</text>
+    <text x="896" y="124" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="900" fill="#FF4D00">WEIRD IDEA</text>
+  </g>
+
+  <!-- desk -->
+  <rect x="36" y="261" width="1128" height="26" rx="10" fill="#FF4D00" stroke="#111111" stroke-width="4"/>
+  <path d="M83 287V323M1117 287V323" stroke="#111111" stroke-width="13" stroke-linecap="round"/>
+
+  <!-- coffee -->
+  <g filter="url(#hardShadow)">
+    <path d="M113 183H215V245C215 257 205 267 193 267H135C123 267 113 257 113 245V183Z" fill="#146EF5" stroke="#111111" stroke-width="4"/>
+    <path d="M215 198H230C248 198 250 236 224 239H215" stroke="#111111" stroke-width="8"/>
+    <ellipse cx="164" cy="183" rx="51" ry="13" fill="#111111"/>
+    <ellipse cx="164" cy="181" rx="41" ry="7" fill="#6F4E37"/>
+    <text x="164" y="229" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="900" fill="white">DEBUG</text>
+    <text x="164" y="246" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="900" fill="#F9E900">JUICE</text>
+  </g>
+  <g stroke="#111111" stroke-width="4" stroke-linecap="round">
+    <path class="steam-a" d="M143 163C132 150 155 142 143 126"/>
+    <path class="steam-b" d="M166 162C154 146 180 139 166 119"/>
+    <path class="steam-c" d="M189 163C179 151 199 143 190 129"/>
+  </g>
+
+  <!-- laptop -->
+  <g filter="url(#hardShadow)">
+    <rect x="378" y="42" width="444" height="215" rx="16" fill="#111111"/>
+    <rect x="397" y="61" width="406" height="174" rx="8" fill="#172032"/>
+    <path d="M335 257H865L832 278H369L335 257Z" fill="#A0C4FF" stroke="#111111" stroke-width="4" stroke-linejoin="round"/>
+    <rect x="565" y="261" width="70" height="7" rx="3.5" fill="#111111" opacity=".35"/>
+  </g>
+  <g clip-path="url(#screen)">
+    <circle class="desk-light" cx="415" cy="77" r="5" fill="#B9FBC0"/>
+    <circle cx="432" cy="77" r="5" fill="#F9E900"/>
+    <circle cx="449" cy="77" r="5" fill="#FF4D00"/>
+    <g class="code-scroll" font-family="Consolas, Courier New, monospace" font-size="14" font-weight="700">
+      <text x="422" y="112" fill="#A0C4FF">const</text>
+      <text x="470" y="112" fill="#FFF8E7">idea =</text>
+      <text x="535" y="112" fill="#F9E900">"slightly impossible"</text>
+      <text x="422" y="139" fill="#FF8A65">while</text>
+      <text x="465" y="139" fill="#FFF8E7">(coffee &amp;&amp; curiosity) {</text>
+      <text x="443" y="166" fill="#B9FBC0">build</text>
+      <text x="486" y="166" fill="#FFF8E7">(idea);</text>
+      <text x="443" y="193" fill="#B9FBC0">break</text>
+      <text x="493" y="193" fill="#FFF8E7">(everything);</text>
+      <text x="443" y="220" fill="#B9FBC0">learn</text>
+      <text x="486" y="220" fill="#FFF8E7">();</text>
+      <text x="422" y="247" fill="#FFF8E7">}</text>
+      <text x="422" y="274" fill="#A0C4FF">return</text>
+      <text x="479" y="274" fill="#F9E900">shipped;</text>
+    </g>
+    <rect class="cursor" x="563" y="204" width="10" height="19" fill="#F9E900"/>
+  </g>
+
+  <!-- Arduino-like board and gear -->
+  <g transform="translate(984 159)" filter="url(#hardShadow)">
+    <rect x="0" y="25" width="132" height="77" rx="10" fill="#B9FBC0" stroke="#111111" stroke-width="4"/>
+    <rect x="17" y="43" width="51" height="40" rx="4" fill="#146EF5" stroke="#111111" stroke-width="3"/>
+    <circle cx="91" cy="49" r="7" fill="#F9E900" stroke="#111111" stroke-width="3"/>
+    <circle cx="111" cy="49" r="7" fill="#FF4D00" stroke="#111111" stroke-width="3"/>
+    <path d="M84 74H116M84 84H106" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+    <g class="gear" transform="translate(65 4)">
+      <path d="M24 0H38L41 10L50 14L59 8L69 18L63 27L67 37L78 40V54L67 57L63 67L69 76L59 86L50 80L41 84L38 94H24L21 84L12 80L3 86L-7 76L-1 67L-5 57L-16 54V40L-5 37L-1 27L-7 18L3 8L12 14L21 10L24 0Z" fill="#F9E900" stroke="#111111" stroke-width="4" stroke-linejoin="round"/>
+      <circle cx="31" cy="47" r="16" fill="#FFF8E7" stroke="#111111" stroke-width="4"/>
+    </g>
+  </g>
+
+  <!-- commit block -->
+  <g class="commit" filter="url(#hardShadow)">
+    <rect x="834" y="218" width="72" height="44" rx="5" fill="#F9E900" stroke="#111111" stroke-width="4"/>
+    <path d="M850 233H890M850 245H880" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+    <text x="870" y="214" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="900" fill="#111111">COMMIT</text>
+  </g>
+
+  <!-- tiny robot -->
+  <g class="robot">
+    <g class="robot-body" filter="url(#hardShadow)">
+      <rect x="744" y="202" width="64" height="50" rx="10" fill="#FFF8E7" stroke="#111111" stroke-width="4"/>
+      <rect x="754" y="181" width="44" height="31" rx="9" fill="#A0C4FF" stroke="#111111" stroke-width="4"/>
+      <g class="robot-eye">
+        <circle cx="767" cy="196" r="4" fill="#111111"/>
+        <circle cx="786" cy="196" r="4" fill="#111111"/>
+      </g>
+      <path d="M776 181V169M770 169H782" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+      <path d="M755 217H797M765 230H787" stroke="#FF4D00" stroke-width="4" stroke-linecap="round"/>
+      <path d="M808 218L828 228L835 225" stroke="#111111" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M744 219L728 230" stroke="#111111" stroke-width="5" stroke-linecap="round"/>
+    </g>
+    <g class="wheel">
+      <circle cx="758" cy="259" r="10" fill="#111111"/>
+      <path d="M758 252V266M751 259H765" stroke="#FFF8E7" stroke-width="2"/>
+    </g>
+    <g class="wheel">
+      <circle cx="794" cy="259" r="10" fill="#111111"/>
+      <path d="M794 252V266M787 259H801" stroke="#FFF8E7" stroke-width="2"/>
+    </g>
+  </g>
+
+  <text x="1030" y="309" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="900" letter-spacing="1.5" fill="#111111">HARDWARE CORNER</text>
+</svg>

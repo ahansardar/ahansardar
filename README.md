@@ -61,6 +61,14 @@
 
 </div>
 
+<br />
+
+<div align="center">
+  <img width="100%" src="./assets/builders-desk.svg" alt="Animated builder's desk with coffee, code, Arduino gear, sticky notes, and a tiny robot pushing a commit" />
+</div>
+
+<br />
+
 ---
 
 ## Things I have no business building this early — but built anyway
