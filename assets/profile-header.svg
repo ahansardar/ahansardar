@@ -1,0 +1,106 @@
+<svg width="1200" height="460" viewBox="0 0 1200 460" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="2" fill="#111111" opacity=".12"/>
+    </pattern>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="8" dy="8" stdDeviation="0" flood-color="#111111"/>
+    </filter>
+    <style>
+      .float-one { animation: floatOne 5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .float-two { animation: floatTwo 6s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .float-three { animation: floatThree 5.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .sun { animation: sunPulse 7s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .blue-orb { animation: blueDrift 8s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .orange-hill { animation: hillBreathe 9s ease-in-out infinite; transform-box: fill-box; transform-origin: bottom right; }
+      .arrow { stroke-dasharray: 240; stroke-dashoffset: 240; animation: drawArrow 4s ease-in-out infinite; }
+      .stamp { animation: stampWiggle 4.5s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .name-orange { animation: orangeBlink 5s ease-in-out infinite; }
+
+      @keyframes floatOne {
+        0%, 100% { transform: translateY(0) rotate(0deg); }
+        50% { transform: translateY(-10px) rotate(2deg); }
+      }
+      @keyframes floatTwo {
+        0%, 100% { transform: translateY(0) rotate(2deg); }
+        50% { transform: translateY(9px) rotate(0deg); }
+      }
+      @keyframes floatThree {
+        0%, 100% { transform: translateY(0) rotate(-2deg); }
+        50% { transform: translateY(-8px) rotate(1deg); }
+      }
+      @keyframes sunPulse {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.035); }
+      }
+      @keyframes blueDrift {
+        0%, 100% { transform: translate(0, 0); }
+        50% { transform: translate(10px, -7px); }
+      }
+      @keyframes hillBreathe {
+        0%, 100% { transform: scale(1); }
+        50% { transform: scale(1.02); }
+      }
+      @keyframes drawArrow {
+        0% { stroke-dashoffset: 240; opacity: 0; }
+        20%, 70% { stroke-dashoffset: 0; opacity: 1; }
+        90%, 100% { stroke-dashoffset: -240; opacity: 0; }
+      }
+      @keyframes stampWiggle {
+        0%, 100% { transform: rotate(0deg); }
+        45% { transform: rotate(-5deg); }
+        55% { transform: rotate(4deg); }
+      }
+      @keyframes orangeBlink {
+        0%, 100% { fill: #FF4D00; }
+        50% { fill: #E63E00; }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * { animation: none !important; }
+      }
+    </style>
+  </defs>
+
+  <rect width="1200" height="460" rx="28" fill="#FFF8E7"/>
+  <rect width="1200" height="460" rx="28" fill="url(#dots)"/>
+
+  <circle class="sun" cx="1080" cy="70" r="145" fill="#F9E900" stroke="#111111" stroke-width="4"/>
+  <circle class="blue-orb" cx="112" cy="395" r="120" fill="#A0C4FF" stroke="#111111" stroke-width="4"/>
+  <path class="orange-hill" d="M894 460C873 365 915 287 1020 253C1112 224 1165 248 1200 273V460H894Z" fill="#FF4D00" stroke="#111111" stroke-width="4"/>
+
+  <g transform="translate(70 56) rotate(-3)" filter="url(#shadow)">
+    <g class="float-one">
+      <rect width="260" height="48" rx="2" fill="#146EF5" stroke="#111111" stroke-width="3"/>
+      <text x="130" y="31" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" letter-spacing="3" fill="white">HELLO, WORLD!</text>
+    </g>
+  </g>
+
+  <text x="66" y="204" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="96" font-weight="900" letter-spacing="-5" fill="#111111">AHAN</text>
+  <text class="name-orange" x="62" y="302" font-family="Arial Black, Arial, Helvetica, sans-serif" font-size="96" font-weight="900" letter-spacing="-5" fill="#FF4D00">SARDAR.</text>
+
+  <g class="float-two">
+    <rect x="592" y="122" width="344" height="58" rx="29" fill="#111111" transform="rotate(2 592 122)"/>
+    <text x="764" y="158" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="22" font-weight="800" fill="#FFF8E7" transform="rotate(2 764 158)">ENGINEER + BUILDER</text>
+  </g>
+
+  <g class="float-three">
+    <rect x="602" y="198" width="430" height="58" rx="29" fill="#F9E900" stroke="#111111" stroke-width="3" transform="rotate(-2 602 198)"/>
+    <text x="817" y="234" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" letter-spacing=".5" fill="#111111" transform="rotate(-2 817 234)">PROFESSIONAL IDEA OVERTHINKER</text>
+  </g>
+
+  <rect x="535" y="278" width="350" height="58" rx="29" fill="#B9FBC0" stroke="#111111" stroke-width="3" transform="rotate(3 535 278)"/>
+  <text x="710" y="314" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" letter-spacing=".5" fill="#111111" transform="rotate(3 710 314)">MAKES THINGS THAT WORK</text>
+
+  <path class="arrow" d="M430 362C505 338 534 374 592 361M577 347L594 361L575 372" stroke="#111111" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="222" y="390" font-family="Georgia, serif" font-size="22" font-style="italic" font-weight="700" fill="#111111">AI · APPS · ROBOTS · WEIRDLY BIG IDEAS</text>
+
+  <g transform="translate(1030 336) rotate(12)">
+    <g class="stamp">
+      <rect x="0" y="0" width="112" height="112" rx="14" fill="#FFF8E7" stroke="#111111" stroke-width="4"/>
+      <text x="56" y="48" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="900" fill="#111111">CURRENTLY</text>
+      <text x="56" y="70" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="900" fill="#FF4D00">BUILDING</text>
+      <text x="56" y="92" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="900" fill="#111111">→</text>
+    </g>
+  </g>
+</svg>

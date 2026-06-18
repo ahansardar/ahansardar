@@ -1,0 +1,41 @@
+name: Build contribution city
+
+on:
+  schedule:
+    # 03:07 IST — after GitHub has settled the previous day's activity.
+    - cron: "37 21 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: contribution-city
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Check out profile repository
+        uses: actions/checkout@v5
+
+      - name: Generate the isometric contribution city
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Commit refreshed city
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add profile-3d-contrib
+          if git diff --cached --quiet; then
+            echo "Contribution city is already current."
+          else
+            git commit -m "chore: rebuild contribution city"
+            git push
+          fi

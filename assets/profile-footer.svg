@@ -1,0 +1,37 @@
+<svg width="1200" height="150" viewBox="0 0 1200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .orange-wave { animation: waveOrange 7s ease-in-out infinite; }
+      .yellow-wave { animation: waveYellow 6s ease-in-out infinite; }
+      .footer-copy { animation: copyBreathe 4s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .spark { animation: spark 3.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .spark-two { animation-delay: -1.6s; }
+
+      @keyframes waveOrange {
+        0%, 100% { transform: translateX(0); }
+        50% { transform: translateX(24px); }
+      }
+      @keyframes waveYellow {
+        0%, 100% { transform: translateX(0) translateY(0); }
+        50% { transform: translateX(-20px) translateY(4px); }
+      }
+      @keyframes copyBreathe {
+        0%, 100% { opacity: .82; letter-spacing: 4px; }
+        50% { opacity: 1; letter-spacing: 5.5px; }
+      }
+      @keyframes spark {
+        0%, 100% { transform: scale(.75) rotate(0deg); opacity: .45; }
+        50% { transform: scale(1.15) rotate(45deg); opacity: 1; }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * { animation: none !important; }
+      }
+    </style>
+  </defs>
+  <rect width="1200" height="150" rx="24" fill="#111111"/>
+  <path class="orange-wave" d="M-40 112C144 34 243 168 419 87C603 2 750 159 1240 48V150H-40V112Z" fill="#FF4D00"/>
+  <path class="yellow-wave" d="M-40 130C175 72 343 168 535 118C761 58 912 145 1240 92V150H-40V130Z" fill="#F9E900"/>
+  <path class="spark" d="M307 25L312 36L323 41L312 46L307 57L302 46L291 41L302 36L307 25Z" fill="#F9E900"/>
+  <path class="spark spark-two" d="M892 19L896 28L905 32L896 36L892 45L888 36L879 32L888 28L892 19Z" fill="#A0C4FF"/>
+  <text class="footer-copy" x="600" y="47" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" letter-spacing="4" fill="#FFF8E7">KEEP MAKING THINGS.</text>
+</svg>
