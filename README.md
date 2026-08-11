@@ -182,6 +182,10 @@ flowchart LR
 
 </div>
 
+<p align="center">
+  <a href="./ACHIEVEMENTS_TRACKER.md"><b>GitHub achievements progress tracker</b></a>
+</p>
+
 <details>
 <summary><b>Fine, show me the language graph too</b></summary>
 <br />
