@@ -113,9 +113,17 @@ def activity_svg(repos, today=None):
     return '\n'.join(out)
 
 
+
+DARK_PALETTE = {'#f5f2e9': '#181c20', '#25251f': '#eee9de', '#595b52': '#b4b7ad', '#ba4529': '#e39173', '#f4e5ae': '#393526', '#d8e1c9': '#29372e', '#ecd7be': '#3b302c', '#62604d': '#b7b29c', '#e5e1d9': '#343a3e', '#fff5df': '#f2d9c4'}
+
+
+def dark_svg(svg):
+    return re.sub(r'#[0-9a-fA-F]{6}', lambda match: DARK_PALETTE.get(match[0], match[0]), svg)
+
+
 if __name__ == '__main__':
     repos = public_repositories()
-    section = '<picture><source media="(max-width: 600px)" srcset="./assets/public-activity-mobile.svg" /><img width="100%" src="./assets/public-activity.svg" alt="Recent public repository pushes, with dates. Expand the text version below for accessible links." /></picture>\n\n<details>\n<summary><b>Activity links, dates and all public repositories</b></summary>\n\n' + build_section(repos) + '\n</details>'
+    section = '<picture><source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/public-activity-mobile-dark.svg" /><source media="(prefers-color-scheme: dark)" srcset="./assets/public-activity-dark.svg" /><source media="(max-width: 600px)" srcset="./assets/public-activity-mobile.svg" /><img width="100%" src="./assets/public-activity.svg" alt="Recent public repository pushes, with dates. Expand the text version below for accessible links." /></picture>\n\n<details>\n<summary><b>Activity links, dates and all public repositories</b></summary>\n\n' + build_section(repos) + '\n</details>'
     readme = ROOT / 'README.md'
     updated = update_readme(readme.read_text(), section)
     graphic = activity_svg(repos)
@@ -131,4 +139,6 @@ if __name__ == '__main__':
     mobile_graphic = ET.tostring(tree, encoding='unicode')
     (ROOT / 'assets/public-activity.svg').write_text(graphic)
     (ROOT / 'assets/public-activity-mobile.svg').write_text(mobile_graphic)
+    (ROOT / 'assets/public-activity-dark.svg').write_text(dark_svg(graphic))
+    (ROOT / 'assets/public-activity-mobile-dark.svg').write_text(dark_svg(mobile_graphic))
     readme.write_text(updated)
