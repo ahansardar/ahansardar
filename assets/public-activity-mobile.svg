@@ -1,0 +1,25 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" width="600" height="856" viewBox="0 0 600 856">
+<ns0:rect width="600" height="856" fill="#f5f2e9" />
+<ns0:text x="36" y="43" font-family="monospace" font-size="20" fill="#595b52">01 / PUBLIC REPOSITORY ACTIVITY</ns0:text>
+<ns0:text x="34" y="110" font-family="Arial,sans-serif" font-size="40" font-weight="700" letter-spacing="-2" fill="#25251f">On my workbench, lately.</ns0:text>
+<ns0:rect x="24" y="147" width="552" height="94" fill="#f4e5ae" />
+<ns0:text x="43" y="184" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#25251f">CookAlong</ns0:text>
+<ns0:text x="43" y="219" font-family="monospace" font-size="19" fill="#595b52">Last push 28 Oct 2026, 13:10 UTC</ns0:text>
+<ns0:rect x="24" y="253" width="552" height="94" fill="#d8e1c9" />
+<ns0:text x="43" y="290" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#25251f">sequential-matching-hackathon</ns0:text>
+<ns0:text x="43" y="325" font-family="monospace" font-size="19" fill="#595b52">Last push 17 Oct 2026, 13:23 UTC</ns0:text>
+<ns0:rect x="24" y="359" width="552" height="94" fill="#ecd7be" />
+<ns0:text x="43" y="396" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#25251f">SafeRide</ns0:text>
+<ns0:text x="43" y="431" font-family="monospace" font-size="19" fill="#595b52">Last push 11 Oct 2026, 05:27 UTC</ns0:text>
+<ns0:rect x="24" y="465" width="552" height="94" fill="#f4e5ae" />
+<ns0:text x="43" y="502" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#25251f">drift-autopsy</ns0:text>
+<ns0:text x="43" y="537" font-family="monospace" font-size="19" fill="#595b52">Last push 01 Oct 2026, 19:29 UTC</ns0:text>
+<ns0:rect x="24" y="571" width="552" height="94" fill="#d8e1c9" />
+<ns0:text x="43" y="608" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#25251f">stateless-android</ns0:text>
+<ns0:text x="43" y="643" font-family="monospace" font-size="19" fill="#595b52">Last push 27 Sep 2026, 12:59 UTC</ns0:text>
+<ns0:rect x="24" y="677" width="552" height="94" fill="#ecd7be" />
+<ns0:text x="43" y="714" font-family="Arial,sans-serif" font-size="25" font-weight="700" fill="#25251f">ai-confidence-drift</ns0:text>
+<ns0:text x="43" y="749" font-family="monospace" font-size="19" fill="#595b52">Last push 21 Sep 2026, 13:47 UTC</ns0:text>
+<ns0:text x="36" y="811" font-family="monospace" font-size="20" fill="#595b52">22 public repos / checked 2026-10-28 UTC</ns0:text>
+<ns0:text x="36" y="840" font-family="Arial,sans-serif" font-size="21" fill="#595b52">Hourly refresh. Activity is not current focus.</ns0:text>
+</ns0:svg>
