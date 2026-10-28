@@ -4,10 +4,10 @@
 <a href="https://ahansardar.vercel.app"><b>Portfolio ↗</b></a> &nbsp; / &nbsp; <a href="https://www.linkedin.com/in/ahansardar"><b>LinkedIn ↗</b></a> &nbsp; / &nbsp; <a href="mailto:ahansardarvis@gmail.com"><b>Say hello ↗</b></a>
 </div>
 
-<picture><source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/about-mobile-dark.svg" /><source media="(prefers-color-scheme: dark)" srcset="./assets/about-dark.svg" /><source media="(max-width: 600px)" srcset="./assets/about-mobile.svg" /><img width="100%" src="./assets/about.svg" alt="A little logic. A lot of personality. I'm Ahan Sardar, a student engineer and full stack developer in Kolkata. I build across AI, web, Android and robotics. Ambitious ideas. Useful products. A little mischief." /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/about-mobile-dark.svg 600w, ./assets/about-dark.svg 800w" sizes="(max-width: 600px) 1px, 100vw" /><source media="(max-width: 600px)" srcset="./assets/about-mobile.svg" /><img width="100%" src="./assets/about.svg" alt="A little logic. A lot of personality. I'm Ahan Sardar, a student engineer and full stack developer in Kolkata. I build across AI, web, Android and robotics. Ambitious ideas. Useful products. A little mischief." /></picture>
 
 <!-- PUBLIC_ACTIVITY:START -->
-<picture><source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/public-activity-mobile-dark.svg" /><source media="(prefers-color-scheme: dark)" srcset="./assets/public-activity-dark.svg" /><source media="(max-width: 600px)" srcset="./assets/public-activity-mobile.svg" /><img width="100%" src="./assets/public-activity.svg" alt="Recent public repository pushes, with dates. Expand the text version below for accessible links." /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/public-activity-mobile-dark.svg 600w, ./assets/public-activity-dark.svg 800w" sizes="(max-width: 600px) 1px, 100vw" /><source media="(max-width: 600px)" srcset="./assets/public-activity-mobile.svg" /><img width="100%" src="./assets/public-activity.svg" alt="Recent public repository pushes, with dates. Expand the text version below for accessible links." /></picture>
 
 <details>
 <summary><b>Activity links, dates and all public repositories</b></summary>
@@ -53,21 +53,21 @@
 </details>
 <!-- PUBLIC_ACTIVITY:END -->
 
-<a href="https://github.com/ahansardar/CookAlong"><picture><source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/cookalong-mobile-dark.svg" /><source media="(prefers-color-scheme: dark)" srcset="./assets/cookalong-dark.svg" /><source media="(max-width: 600px)" srcset="./assets/cookalong-mobile.svg" /><img width="100%" src="./assets/cookalong.svg" alt="CookAlong: recipe search, step-by-step instructions and timers. Next.js, TypeScript and Supabase. Open repository." /></picture></a>
+<a href="https://github.com/ahansardar/CookAlong"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/cookalong-mobile-dark.svg 600w, ./assets/cookalong-dark.svg 800w" sizes="(max-width: 600px) 1px, 100vw" /><source media="(max-width: 600px)" srcset="./assets/cookalong-mobile.svg" /><img width="100%" src="./assets/cookalong.svg" alt="CookAlong: recipe search, step-by-step instructions and timers. Next.js, TypeScript and Supabase. Open repository." /></picture></a>
 
 [Try CookAlong live ↗](https://cookalong.vercel.app/) · [Source ↗](https://github.com/ahansardar/CookAlong)
 
-<a href="https://github.com/ahansardar/BharatScan"><picture><source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/bharatscan-mobile-dark.svg" /><source media="(prefers-color-scheme: dark)" srcset="./assets/bharatscan-dark.svg" /><source media="(max-width: 600px)" srcset="./assets/bharatscan-mobile.svg" /><img width="100%" src="./assets/bharatscan.svg" alt="BharatScan: paper to searchable PDF. On-device document segmentation, OCR and PDF annotation. Kotlin, Jetpack Compose, CameraX and ML Kit. Open repository." /></picture></a>
+<a href="https://github.com/ahansardar/BharatScan"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/bharatscan-mobile-dark.svg 600w, ./assets/bharatscan-dark.svg 800w" sizes="(max-width: 600px) 1px, 100vw" /><source media="(max-width: 600px)" srcset="./assets/bharatscan-mobile.svg" /><img width="100%" src="./assets/bharatscan.svg" alt="BharatScan: paper to searchable PDF. On-device document segmentation, OCR and PDF annotation. Kotlin, Jetpack Compose, CameraX and ML Kit. Open repository." /></picture></a>
 
 [BharatScan source ↗](https://github.com/ahansardar/BharatScan)
 
-<a href="https://github.com/ahansardar/SPARKY"><picture><source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/sparky-mobile-dark.svg" /><source media="(prefers-color-scheme: dark)" srcset="./assets/sparky-dark.svg" /><source media="(max-width: 600px)" srcset="./assets/sparky-mobile.svg" /><img width="100%" src="./assets/sparky.svg" alt="SPARKY: an assistant with a local-model core. Voice, wake words and desktop automation. Python and Ollama. Vision still under development. Open repository." /></picture></a>
+<a href="https://github.com/ahansardar/SPARKY"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/sparky-mobile-dark.svg 600w, ./assets/sparky-dark.svg 800w" sizes="(max-width: 600px) 1px, 100vw" /><source media="(max-width: 600px)" srcset="./assets/sparky-mobile.svg" /><img width="100%" src="./assets/sparky.svg" alt="SPARKY: an assistant with a local-model core. Voice, wake words and desktop automation. Python and Ollama. Vision still under development. Open repository." /></picture></a>
 
 [SPARKY source ↗](https://github.com/ahansardar/SPARKY) · [All projects ↗](https://github.com/ahansardar?tab=repositories)
 
-<picture><source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/toolkit-mobile-dark.svg" /><source media="(prefers-color-scheme: dark)" srcset="./assets/toolkit-dark.svg" /><source media="(max-width: 600px)" srcset="./assets/toolkit-mobile.svg" /><img width="100%" src="./assets/toolkit.svg" alt="Different tools, one builder. AI: Python, PyTorch, OpenCV, Ollama, scikit-learn. Web: TypeScript, JavaScript, Next.js, React, Django, Flask. Mobile and physical systems: Kotlin, Android, Java, C++, Arduino, ROS. Foundations: PostgreSQL, Supabase, Linux, Git, GitHub Actions." /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/toolkit-mobile-dark.svg 600w, ./assets/toolkit-dark.svg 800w" sizes="(max-width: 600px) 1px, 100vw" /><source media="(max-width: 600px)" srcset="./assets/toolkit-mobile.svg" /><img width="100%" src="./assets/toolkit.svg" alt="Different tools, one builder. AI: Python, PyTorch, OpenCV, Ollama, scikit-learn. Web: TypeScript, JavaScript, Next.js, React, Django, Flask. Mobile and physical systems: Kotlin, Android, Java, C++, Arduino, ROS. Foundations: PostgreSQL, Supabase, Linux, Git, GitHub Actions." /></picture>
 
-<picture><source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/process-mobile-dark.svg" /><source media="(prefers-color-scheme: dark)" srcset="./assets/process-dark.svg" /><source media="(max-width: 600px)" srcset="./assets/process-mobile.svg" /><img width="100%" src="./assets/process.svg" alt="A method to the making. Sketch the system. Build the smallest useful version. Break it and find what went wrong. Make it clearer, faster and easier. Ship, learn and make it a little better." /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/process-mobile-dark.svg 600w, ./assets/process-dark.svg 800w" sizes="(max-width: 600px) 1px, 100vw" /><source media="(max-width: 600px)" srcset="./assets/process-mobile.svg" /><img width="100%" src="./assets/process.svg" alt="A method to the making. Sketch the system. Build the smallest useful version. Break it and find what went wrong. Make it clearer, faster and easier. Ship, learn and make it a little better." /></picture>
 
 <details>
 <summary><b>Read the profile as text</b></summary>
@@ -95,6 +95,6 @@ The city is generated by this repository's scheduled workflow. GitHub activity i
 [Achievements tracker](./ACHIEVEMENTS_TRACKER.md)
 </details>
 
-<a href="mailto:ahansardarvis@gmail.com"><picture><source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/contact-mobile-dark.svg" /><source media="(prefers-color-scheme: dark)" srcset="./assets/contact-dark.svg" /><source media="(max-width: 600px)" srcset="./assets/contact-mobile.svg" /><img width="100%" src="./assets/contact.svg" alt="Got a wild idea? Practical AI. Thoughtful interfaces. Systems that hold up beyond the demo. Email Ahan." /></picture></a>
+<a href="mailto:ahansardarvis@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contact-mobile-dark.svg 600w, ./assets/contact-dark.svg 800w" sizes="(max-width: 600px) 1px, 100vw" /><source media="(max-width: 600px)" srcset="./assets/contact-mobile.svg" /><img width="100%" src="./assets/contact.svg" alt="Got a wild idea? Practical AI. Thoughtful interfaces. Systems that hold up beyond the demo. Email Ahan." /></picture></a>
 
 [Let's talk ↗](mailto:ahansardarvis@gmail.com) · [Portfolio ↗](https://ahansardar.vercel.app/) · [LinkedIn ↗](https://www.linkedin.com/in/ahansardar)
