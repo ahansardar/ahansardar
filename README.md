@@ -85,9 +85,6 @@ I'm Ahan Sardar, a student engineer and full stack developer in Kolkata. I build
 I'm interested in practical AI, thoughtful interfaces and systems that hold up beyond the demo.
 </details>
 
-<details>
-<summary><b>A tiny city built one contribution at a time</b></summary>
-
 <!-- CONTRIBUTION_CITY:START -->
 <picture><source media="(prefers-color-scheme: dark)" srcset="./profile-city/city-dark.svg" /><img width="100%" src="./profile-city/city-light.svg" alt="Illustrated contribution city: buildings represent active dates, green lots represent zero days, and building height increases with contributions." /></picture>
 
@@ -101,7 +98,6 @@ Built daily from the publicly visible GitHub contribution calendar. This can inc
 
 [Original contribution city](./profile-3d-contrib/profile-season-animate.svg) · [Achievements tracker](./ACHIEVEMENTS_TRACKER.md)
 <!-- CONTRIBUTION_CITY:END -->
-</details>
 
 <a href="mailto:ahansardarvis@gmail.com"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contact-mobile-dark.svg" /><source media="(max-width: 600px)" srcset="./assets/contact-mobile.svg" /><img width="100%" src="./assets/contact.svg" alt="Got a wild idea? Practical AI. Thoughtful interfaces. Systems that hold up beyond the demo. Email Ahan." /></picture></a>
 
