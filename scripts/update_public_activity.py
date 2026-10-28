@@ -123,7 +123,7 @@ def dark_svg(svg):
 
 if __name__ == '__main__':
     repos = public_repositories()
-    section = '<picture><source media="(prefers-color-scheme: dark) and (max-width: 600px)" srcset="./assets/public-activity-mobile-dark.svg" /><source media="(prefers-color-scheme: dark)" srcset="./assets/public-activity-dark.svg" /><source media="(max-width: 600px)" srcset="./assets/public-activity-mobile.svg" /><img width="100%" src="./assets/public-activity.svg" alt="Recent public repository pushes, with dates. Expand the text version below for accessible links." /></picture>\n\n<details>\n<summary><b>Activity links, dates and all public repositories</b></summary>\n\n' + build_section(repos) + '\n</details>'
+    section = '<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/public-activity-mobile-dark.svg 600w, ./assets/public-activity-dark.svg 800w" sizes="(max-width: 600px) 1px, 100vw" /><source media="(max-width: 600px)" srcset="./assets/public-activity-mobile.svg" /><img width="100%" src="./assets/public-activity.svg" alt="Recent public repository pushes, with dates. Expand the text version below for accessible links." /></picture>\n\n<details>\n<summary><b>Activity links, dates and all public repositories</b></summary>\n\n' + build_section(repos) + '\n</details>'
     readme = ROOT / 'README.md'
     updated = update_readme(readme.read_text(), section)
     graphic = activity_svg(repos)
