@@ -2,40 +2,37 @@ name: Build contribution city
 
 on:
   schedule:
-    # 03:07 IST — after GitHub has settled the previous day's activity.
-    - cron: "37 21 * * *"
+    - cron: '37 21 * * *'
   workflow_dispatch:
+  push:
+    paths:
+      - scripts/build_contribution_city.py
+      - .github/workflows/profile-3d.yml
 
 permissions:
   contents: write
 
 concurrency:
   group: contribution-city
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
-
+    timeout-minutes: 5
     steps:
-      - name: Check out profile repository
-        uses: actions/checkout@v5
-
-      - name: Generate the isometric contribution city
-        uses: yoshi389111/github-profile-3d-contrib@latest
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          USERNAME: ${{ github.repository_owner }}
-
+      - uses: actions/checkout@v5
+      - name: Render public calendar as a city
+        run: python3 scripts/build_contribution_city.py
       - name: Commit refreshed city
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add profile-3d-contrib
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add README.md profile-city
           if git diff --cached --quiet; then
-            echo "Contribution city is already current."
+            echo 'Contribution city is current.'
           else
-            git commit -m "chore: rebuild contribution city"
+            git commit -m 'chore: rebuild themed contribution city'
+            git pull --rebase
             git push
           fi
