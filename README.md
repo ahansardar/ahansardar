@@ -89,7 +89,7 @@ I'm interested in practical AI, thoughtful interfaces and systems that hold up b
 <!-- CONTRIBUTION_CITY:START -->
 <picture><source media="(prefers-color-scheme: dark)" srcset="./profile-city/city-dark.svg" /><img width="100%" src="./profile-city/city-light.svg" alt="Illustrated contribution city: buildings represent active dates, green lots represent zero days, and building height increases with contributions." /></picture>
 
-**2,048 contributions across 157 active dates** · 2025-11-09 to 2026-11-12.
+**2,048 contributions across 157 active dates** · 2025-11-09 to 2026-11-13.
 
 Each plot is one date, oldest to newest, row by row. Taller buildings mean more contributions, using a logarithmic scale. Green plots are zero days. Roads, trees, windows and roof details are decoration, not extra activity.
 
