@@ -2,6 +2,7 @@
 import datetime as dt
 import html
 import json
+import os
 import pathlib
 import re
 import urllib.request
@@ -12,12 +13,17 @@ OWNER = 'ahansardar'
 
 
 def public_json(path):
-    # Deliberately unauthenticated: private repository data is inaccessible.
-    req = urllib.request.Request('https://api.github.com' + path, headers={
+    # Public data only: the token lifts the anonymous rate limit and the
+    # 'type=public' query keeps private repository data out of the response.
+    headers = {
         'Accept': 'application/vnd.github+json',
         'User-Agent': 'ahansardar-profile-public-activity',
         'X-GitHub-Api-Version': '2022-11-28',
-    })
+    }
+    token = os.environ.get('GITHUB_TOKEN') or os.environ.get('GH_TOKEN')
+    if token:
+        headers['Authorization'] = f'Bearer {token}'
+    req = urllib.request.Request('https://api.github.com' + path, headers=headers)
     with urllib.request.urlopen(req, timeout=20) as response:
         return json.load(response)
 
@@ -29,7 +35,7 @@ def safe_words(value):
 def public_repositories(fetch=public_json):
     repos = []
     for page in range(1, 21):
-        batch = fetch(f'/users/{OWNER}/repos?type=owner&sort=pushed&direction=desc&per_page=100&page={page}')
+        batch = fetch(f'/users/{OWNER}/repos?type=public&sort=pushed&direction=desc&per_page=100&page={page}')
         if not isinstance(batch, list):
             raise ValueError('Expected a repository list.')
         for r in batch:
